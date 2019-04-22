@@ -1,24 +1,34 @@
-# README
+# Nexmo Voice API and Rails Conference Call Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is sample code to show how to create a Rails conference call using the Nexmo Voice API.
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+This project requires the following:
 
-* System dependencies
+* Ruby
+* Rails
+* A Nexmo Account
+* A Nexmo Phone Number
+* A Nexmo Voice Application
+* ngrok
 
-* Configuration
+## Installation
 
-* Database creation
+To install the application:
 
-* Database initialization
+* Clone this repository locally
+* Run `bundle install` and `rake db:migrate` to set up the Rails application
 
-* How to run the test suite
+## Usage
 
-* Services (job queues, cache servers, search engines, etc.)
+To run the telephone game do the following:
 
-* Deployment instructions
+* Download and install ngrok locally, if you have not done so already
+* Start your ngrok server by running `ngrok http 3000` from the command line
+* Start your Rails server by running `rails s` from the command line
+* Dial your Nexmo phone number and join the conference call. Up to 50 people can join at once.
 
-* ...
+## License
+
+This project is under the [MIT License](LICENSE).
